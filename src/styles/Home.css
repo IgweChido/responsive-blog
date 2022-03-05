@@ -1,0 +1,56 @@
+.scorrect{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+}
+
+.atwords{
+    font-size: 18px;
+    width: 600px;
+    max-width: 100%;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #333;
+}
+
+
+
+
+/* Medium devices (landscape tablets, 1000px and down) ************************************/
+@media only screen and (max-width: 1000px) {
+
+}
+
+
+/*****************  small devices (phones, 768px and down) *********************/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/* Extra small devices (phones, 600px and down) ***********************/
+@media only screen and (max-width: 600px) {
+    .atwords{
+        font-size: 16px;
+        width: 600px;
+        max-width: 100%;
+        line-height: 1.6;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .scorrect{
+      
+        margin-top: 70px;
+        /* margin-bottom: 100px; */
+    }
+}
+
+/*****************  smallest devices (phones, 300px and down) *********************/
+@media only screen and (max-width: 300px) {
+    .atwords{
+        /* border:1px solid yellow; */
+        font-weight: 400;
+        
+    }
+}

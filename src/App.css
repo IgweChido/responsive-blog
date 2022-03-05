@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    /* overflow-x: hidden; */
+    font-family: Sailec,sans-serif;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.marginp{
+    /* border: 1px solid red; */
+    width: 1000px;
+    display: block;
+    margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+/* Medium devices (landscape tablets, 1000px and down) ************************************/
+@media only screen and (max-width: 1000px) {
+    .marginp{
+       
+        width: 768px;
+        display: block;
+        margin: auto;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+
+/*****************  small devices (phones, 768px and down) *********************/
+@media only screen and (max-width: 768px) {
+    .marginp{
+       
+        width: 600px;
+        display: block;
+        margin: auto;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Extra small devices (phones, 600px and down) ***********************/
+@media only screen and (max-width: 600px) {
+    .marginp{
+       
+        width: 85%;
+        display: block;
+        margin: auto;
+        /* border: 1px solid brown; */
+    }
+
 }

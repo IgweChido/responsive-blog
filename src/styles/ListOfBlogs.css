@@ -1,0 +1,207 @@
+/****************  styles ****************/
+
+.blogdiv{
+    /* border: 1px solid green; */
+    height: 475px;
+    box-shadow: 0 31px 44px -30px rgb(0 0 0 / 30%);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.blogimg{
+    /* border: 1px solid blue; */
+    float: left;
+    height: 475px;
+}
+
+.blogwords{
+    /* border: 1px solid yellow; */
+    padding: 50px 60px 50px 40px;
+    float: right;
+    width: 519px;
+    height: 475px;
+    background: #f9f9f9;
+}
+
+.btitle{
+    /* border: 1px solid blue; */
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.bwords{
+    /* border: 1px solid yellow; */
+    margin-top: -10px;
+    margin-bottom: 40px;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bbutton{
+    background: url('../images/arrow.png');
+    background-size: contain!important;
+    background-position: 90% 50%!important;
+    background-repeat: no-repeat!important;
+    background-size: 33.5px 18px !important;
+    border: 4px solid #f0505e;
+        color: #f0505e !important; 
+        padding: 16px 130px 16px 16px;
+        font-weight: 700;
+        font-family: Sailec,sans-serif;
+        
+      
+}
+
+.bdate{
+    /* border: 1px solid red; */
+    margin-top: 23px;
+    color: #ccced2;
+    font-size: 14px;
+    width:fit-content;
+    display: inline-block;
+}
+
+.bauthor{
+    /* border: 1px solid yellow; */
+    display: inline-block;
+    color: #505bf0;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 1000px and down) ************************************/
+@media only screen and (max-width: 1000px) {
+
+    .blogdiv{
+        height: 383px;
+    }
+    .blogimg{
+        
+        
+        height: 100%;
+        width: 50%;
+    }
+
+    .blogimg img{
+        width: 100%;
+    }
+    
+    .blogwords{
+       
+        padding: 30px 60px 50px 40px;
+        width: 50%;
+        height: 100%;
+        background: #f9f9f9;
+    }
+
+
+    .btitle{
+        /* border: 1px solid blue; */
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #000;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+}
+
+
+/*****************  small devices (phones, 768px and down) *********************/
+@media only screen and (max-width: 768px) {
+    .blogdiv{
+        height: 600px;
+        margin-top: 50px;
+    }
+    .blogimg{
+        
+        float: none;
+        height: 50%;
+       
+        
+    }
+
+    .blogimg img{
+        height: 100%;
+    }
+    
+
+    .blogwords{
+        padding: 25px 30px 25px 20px;
+        float: none;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) ***********************/
+@media only screen and (max-width: 600px) {
+
+    .blogdiv{
+        height: 650px;
+    }
+    .blogimg{
+        
+        float: none;
+      
+        width: 70%;
+        
+        
+    }
+
+
+    .btitle{
+        /* border: 1px solid blue; */
+        font-size: 24px;
+        
+    }
+
+    .bwords{
+        font-size: 16px;
+    }
+    
+}
+
+/*****************  smallest devices (phones, 300px and down) *********************/
+@media only screen and (max-width: 350px) {
+    .blogdiv{
+        width: 100%;
+        height: 750px;
+    }
+
+    .blogimg{
+        
+        float: none;
+        /* border: 1px solid brown; */
+        width: 100%;
+        height: 300px;
+        min-width: 200px;
+        
+        
+    }
+
+    .blogimg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bbutton{
+        background: none;
+        width: 226px !important;
+        padding: 16px;
+    }
+
+
+}
+
