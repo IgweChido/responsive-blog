@@ -5,15 +5,22 @@ import '../styles/Home.css';
 import UseFetch from './UseFetch';
 import ErrorBoundary from './ErrorBoundary';
 
+
 const Home = () => {
    
-    const{data, isPending, error} = UseFetch('https://newsapi.org/v2/everything?q=Apple&from=2022-02-28&sortBy=popularity&apiKey=37491848ad7b4bb9844ea07fdadf9ee0');
-
-    console.log(error);
+    const{data, isPending, error} =  UseFetch( 'https://newsapi.org/v2/everything?q=Apple&from=2022-02-28&sortBy=popularity&apiKey=37491848ad7b4bb9844ea07fdadf9ee0');
+    console.log(isPending);
+    console.log(data);
+    const {articles} = data;
+    
+  
+    
+  
   return (
+   
     <div>
-         {error && <div>{ error }</div>}
-      { isPending && <div>Loading...</div>} 
+      {error && <h1>{ error }</h1>}
+      { isPending && <h1>Loading...</h1>} 
       
       <div className='supers scorrect'>
             <div className='marginp'>
@@ -24,9 +31,9 @@ const Home = () => {
 
         </div>
        
-            {data && <div className='marginp'> 
+            {articles && <div className='marginp'> 
             <ErrorBoundary>
-            <ListOfBlogs data={data}/>
+            <ListOfBlogs articles={articles}/>
             </ErrorBoundary>
         </div> }
         

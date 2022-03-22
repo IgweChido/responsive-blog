@@ -2,7 +2,7 @@
 
 .blogdiv{
     /* border: 1px solid green; */
-    height: 475px;
+    height: 600px;
     box-shadow: 0 31px 44px -30px rgb(0 0 0 / 30%);
     margin-top: 100px;
     margin-bottom: 50px;
@@ -12,20 +12,26 @@
     /* border: 1px solid blue; */
     float: left;
     height: 475px;
+    width: 50%;
+}
+
+.blogimg img{
+    /* border: 1px solid rgb(43, 255, 0); */
+    width: 100%;
 }
 
 .blogwords{
     /* border: 1px solid yellow; */
     padding: 50px 60px 50px 40px;
     float: right;
-    width: 519px;
-    height: 475px;
+    width: 50%;
+    height: 100%;
     background: #f9f9f9;
 }
 
 .btitle{
     /* border: 1px solid blue; */
-    font-size: 42px;
+    font-size: 38px;
     margin-bottom: 40px;
     color: #000;
     font-weight: 700;

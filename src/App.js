@@ -20,7 +20,7 @@ function App() {
           <Route  path="/CreateBlog">
              <CreateBlog/>
           </Route>
-          <Route path="/BlogDetails">
+          <Route path="/:index">
              <BlogDetails/>
           </Route>
           <Route path="/Contact">
