@@ -20,7 +20,7 @@ const ListOfBlogs = ({articles}) => {
 
       <div>
           {articles.map((dat, index) =>(
-         details ?<div> 
+        <div> 
             <div>
                     {/* Blog div */}
                 <div className='blogdiv' key={index}>
@@ -33,7 +33,7 @@ const ListOfBlogs = ({articles}) => {
                     <div className='blogwords'>
                         <p className='btitle'>{articles[index].title}</p>
                         <p className='bwords'>{dat.description}</p>
-                        <div  onclick={Blogdetails()}className='bbutton'>Read blog</div>
+                        <Link to={`/blogs/${index}`} className='bbutton'>Read blog</Link>
 
                         <div>
                             <p className='bdate'>{dat.publishedAt}</p><p className='bauthor'>{dat.author}</p> 
@@ -46,7 +46,7 @@ const ListOfBlogs = ({articles}) => {
             
 
 
-</div> : <BlogDetails article= {[articles]}/>
+</div> 
 ))}
       </div>
     
